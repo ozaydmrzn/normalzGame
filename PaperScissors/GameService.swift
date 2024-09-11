@@ -11,16 +11,16 @@ import Firebase
 
 class GameService: ObservableObject {
     private let functionUrl = "https://us-central1-normalz-dbe99.cloudfunctions.net/normalzGame"
-    
+
     func fetchQuestion(completion: @escaping (Result<Question, Error>) -> Void) {
         guard let url = URL(string: functionUrl) else {
             completion(.failure(NSError(domain: "", code: -1, userInfo: [NSLocalizedDescriptionKey: "Invalid URL"])))
             return
         }
-        
+
         var request = URLRequest(url: url)
         request.httpMethod = "GET"
-        
+
         URLSession.shared.dataTask(with: request) { data, response, error in
             if let error = error {
                 print("Network error: \(error.localizedDescription)")
@@ -29,7 +29,7 @@ class GameService: ObservableObject {
                 }
                 return
             }
-            
+
             guard let data = data else {
                 print("No data received from server")
                 DispatchQueue.main.async {
@@ -37,13 +37,13 @@ class GameService: ObservableObject {
                 }
                 return
             }
-            
+
             do {
-                           let decoder = JSONDecoder()
-                           let question = try decoder.decode(Question.self, from: data)
-                           DispatchQueue.main.async {
-                               completion(.success(question))
-                           }
+                let decoder = JSONDecoder()
+                let question = try decoder.decode(Question.self, from: data)
+                DispatchQueue.main.async {
+                    completion(.success(question))
+                }
             } catch {
                 print("Error decoding question: \(error)")
                 if let jsonString = String(data: data, encoding: .utf8) {
@@ -62,11 +62,11 @@ class GameService: ObservableObject {
             }
             return
         }
-        
+
         var request = URLRequest(url: url)
         request.httpMethod = "POST"
         request.setValue("application/json", forHTTPHeaderField: "Content-Type")
-        
+
         let body: [String: String] = ["questionId": questionId, "selectedOption": selectedOption]
         do {
             request.httpBody = try JSONEncoder().encode(body)
@@ -77,7 +77,7 @@ class GameService: ObservableObject {
             }
             return
         }
-        
+
         URLSession.shared.dataTask(with: request) { data, response, error in
             if let error = error {
                 print("Network error: \(error.localizedDescription)")
@@ -86,7 +86,7 @@ class GameService: ObservableObject {
                 }
                 return
             }
-            
+
             guard let data = data else {
                 print("No data received")
                 DispatchQueue.main.async {
@@ -94,7 +94,7 @@ class GameService: ObservableObject {
                 }
                 return
             }
-            
+
             do {
                 if let jsonResult = try JSONSerialization.jsonObject(with: data, options: []) as? [String: Any],
                    let message = jsonResult["message"] as? String {
@@ -134,6 +134,13 @@ struct Question: Codable {
         options = try container.decode([String].self, forKey: .options)
         answerCounts = try container.decodeIfPresent([String: Int].self, forKey: .answerCounts) ?? [:]
         totalAnswers = try container.decodeIfPresent(Int.self, forKey: .totalAnswers) ?? 0
+    }
+
+    init(questionId: String, options: [String], answerCounts: [String : Int], totalAnswers: Int) {
+        self.questionId = questionId
+        self.options = options
+        self.answerCounts = answerCounts
+        self.totalAnswers = totalAnswers
     }
 }
 

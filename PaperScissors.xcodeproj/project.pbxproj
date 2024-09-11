@@ -7,13 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		00A90B0A2C90A69F00E657E9 /* ResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A90B092C90A69F00E657E9 /* ResultView.swift */; };
+		00A90B142C90BBF300E657E9 /* TitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A90B132C90BBF300E657E9 /* TitleView.swift */; };
 		7D29AD7E2C7DEF000097881E /* PaperScissorsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D29AD7D2C7DEF000097881E /* PaperScissorsApp.swift */; };
 		7D29AD802C7DEF000097881E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D29AD7F2C7DEF000097881E /* ContentView.swift */; };
 		7D29AD822C7DEF010097881E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7D29AD812C7DEF010097881E /* Assets.xcassets */; };
 		7D29AD862C7DEF010097881E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7D29AD852C7DEF010097881E /* Preview Assets.xcassets */; };
-		7D29AD902C7DEF010097881E /* PaperScissorsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D29AD8F2C7DEF010097881E /* PaperScissorsTests.swift */; };
-		7D29AD9A2C7DEF020097881E /* PaperScissorsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D29AD992C7DEF020097881E /* PaperScissorsUITests.swift */; };
-		7D29AD9C2C7DEF020097881E /* PaperScissorsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D29AD9B2C7DEF020097881E /* PaperScissorsUITestsLaunchTests.swift */; };
 		7D29ADA92C7E158A0097881E /* LeaderboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D29ADA82C7E158A0097881E /* LeaderboardView.swift */; };
 		7D29ADAB2C7FDB1C0097881E /* GameService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D29ADAA2C7FDB1C0097881E /* GameService.swift */; };
 		7D29ADAD2C7FDC550097881E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7D29ADAC2C7FDC550097881E /* GoogleService-Info.plist */; };
@@ -28,35 +27,15 @@
 		7DFE651C2C8BAF9900F0ACD2 /* NetworkMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DFE651B2C8BAF9900F0ACD2 /* NetworkMonitor.swift */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		7D29AD8C2C7DEF010097881E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 7D29AD722C7DEF000097881E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 7D29AD792C7DEF000097881E;
-			remoteInfo = PaperScissors;
-		};
-		7D29AD962C7DEF020097881E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 7D29AD722C7DEF000097881E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 7D29AD792C7DEF000097881E;
-			remoteInfo = PaperScissors;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
+		00A90B092C90A69F00E657E9 /* ResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultView.swift; sourceTree = "<group>"; };
+		00A90B132C90BBF300E657E9 /* TitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleView.swift; sourceTree = "<group>"; };
 		7D29AD7A2C7DEF000097881E /* PaperScissors.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PaperScissors.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D29AD7D2C7DEF000097881E /* PaperScissorsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaperScissorsApp.swift; sourceTree = "<group>"; };
 		7D29AD7F2C7DEF000097881E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		7D29AD812C7DEF010097881E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7D29AD832C7DEF010097881E /* PaperScissors.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PaperScissors.entitlements; sourceTree = "<group>"; };
 		7D29AD852C7DEF010097881E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		7D29AD8B2C7DEF010097881E /* PaperScissorsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PaperScissorsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		7D29AD8F2C7DEF010097881E /* PaperScissorsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaperScissorsTests.swift; sourceTree = "<group>"; };
-		7D29AD952C7DEF020097881E /* PaperScissorsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PaperScissorsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		7D29AD992C7DEF020097881E /* PaperScissorsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaperScissorsUITests.swift; sourceTree = "<group>"; };
-		7D29AD9B2C7DEF020097881E /* PaperScissorsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaperScissorsUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		7D29ADA82C7E158A0097881E /* LeaderboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaderboardView.swift; sourceTree = "<group>"; };
 		7D29ADAA2C7FDB1C0097881E /* GameService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameService.swift; sourceTree = "<group>"; };
 		7D29ADAC2C7FDC550097881E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -80,30 +59,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7D29AD882C7DEF010097881E /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		7D29AD922C7DEF020097881E /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		00A90B082C90A68500E657E9 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				00A90B092C90A69F00E657E9 /* ResultView.swift */,
+				00A90B132C90BBF300E657E9 /* TitleView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		7D29AD712C7DEF000097881E = {
 			isa = PBXGroup;
 			children = (
 				7DFE65192C8BAE0600F0ACD2 /* Launch Screen.storyboard */,
 				7D29AD7C2C7DEF000097881E /* PaperScissors */,
-				7D29AD8E2C7DEF010097881E /* PaperScissorsTests */,
-				7D29AD982C7DEF020097881E /* PaperScissorsUITests */,
 				7D29AD7B2C7DEF000097881E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -112,8 +84,6 @@
 			isa = PBXGroup;
 			children = (
 				7D29AD7A2C7DEF000097881E /* PaperScissors.app */,
-				7D29AD8B2C7DEF010097881E /* PaperScissorsTests.xctest */,
-				7D29AD952C7DEF020097881E /* PaperScissorsUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -121,6 +91,7 @@
 		7D29AD7C2C7DEF000097881E /* PaperScissors */ = {
 			isa = PBXGroup;
 			children = (
+				00A90B082C90A68500E657E9 /* Views */,
 				7D29ADB92C7FE6EF0097881E /* Info.plist */,
 				7DFE65172C88BFCF00F0ACD2 /* OnboardingView.swift */,
 				7D29AD7D2C7DEF000097881E /* PaperScissorsApp.swift */,
@@ -143,23 +114,6 @@
 				7D29AD852C7DEF010097881E /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
-			sourceTree = "<group>";
-		};
-		7D29AD8E2C7DEF010097881E /* PaperScissorsTests */ = {
-			isa = PBXGroup;
-			children = (
-				7D29AD8F2C7DEF010097881E /* PaperScissorsTests.swift */,
-			);
-			path = PaperScissorsTests;
-			sourceTree = "<group>";
-		};
-		7D29AD982C7DEF020097881E /* PaperScissorsUITests */ = {
-			isa = PBXGroup;
-			children = (
-				7D29AD992C7DEF020097881E /* PaperScissorsUITests.swift */,
-				7D29AD9B2C7DEF020097881E /* PaperScissorsUITestsLaunchTests.swift */,
-			);
-			path = PaperScissorsUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -189,42 +143,6 @@
 			productReference = 7D29AD7A2C7DEF000097881E /* PaperScissors.app */;
 			productType = "com.apple.product-type.application";
 		};
-		7D29AD8A2C7DEF010097881E /* PaperScissorsTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 7D29ADA22C7DEF020097881E /* Build configuration list for PBXNativeTarget "PaperScissorsTests" */;
-			buildPhases = (
-				7D29AD872C7DEF010097881E /* Sources */,
-				7D29AD882C7DEF010097881E /* Frameworks */,
-				7D29AD892C7DEF010097881E /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				7D29AD8D2C7DEF010097881E /* PBXTargetDependency */,
-			);
-			name = PaperScissorsTests;
-			productName = PaperScissorsTests;
-			productReference = 7D29AD8B2C7DEF010097881E /* PaperScissorsTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		7D29AD942C7DEF020097881E /* PaperScissorsUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 7D29ADA52C7DEF020097881E /* Build configuration list for PBXNativeTarget "PaperScissorsUITests" */;
-			buildPhases = (
-				7D29AD912C7DEF020097881E /* Sources */,
-				7D29AD922C7DEF020097881E /* Frameworks */,
-				7D29AD932C7DEF020097881E /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				7D29AD972C7DEF020097881E /* PBXTargetDependency */,
-			);
-			name = PaperScissorsUITests;
-			productName = PaperScissorsUITests;
-			productReference = 7D29AD952C7DEF020097881E /* PaperScissorsUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -237,14 +155,6 @@
 				TargetAttributes = {
 					7D29AD792C7DEF000097881E = {
 						CreatedOnToolsVersion = 15.4;
-					};
-					7D29AD8A2C7DEF010097881E = {
-						CreatedOnToolsVersion = 15.4;
-						TestTargetID = 7D29AD792C7DEF000097881E;
-					};
-					7D29AD942C7DEF020097881E = {
-						CreatedOnToolsVersion = 15.4;
-						TestTargetID = 7D29AD792C7DEF000097881E;
 					};
 				};
 			};
@@ -265,8 +175,6 @@
 			projectRoot = "";
 			targets = (
 				7D29AD792C7DEF000097881E /* PaperScissors */,
-				7D29AD8A2C7DEF010097881E /* PaperScissorsTests */,
-				7D29AD942C7DEF020097881E /* PaperScissorsUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -283,20 +191,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7D29AD892C7DEF010097881E /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		7D29AD932C7DEF020097881E /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -309,42 +203,14 @@
 				7D29AD7E2C7DEF000097881E /* PaperScissorsApp.swift in Sources */,
 				7DFE65182C88BFCF00F0ACD2 /* OnboardingView.swift in Sources */,
 				7DFE65162C8864F300F0ACD2 /* GameCenterManager.swift in Sources */,
+				00A90B142C90BBF300E657E9 /* TitleView.swift in Sources */,
+				00A90B0A2C90A69F00E657E9 /* ResultView.swift in Sources */,
 				7D29ADAB2C7FDB1C0097881E /* GameService.swift in Sources */,
 				7DFE651C2C8BAF9900F0ACD2 /* NetworkMonitor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7D29AD872C7DEF010097881E /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				7D29AD902C7DEF010097881E /* PaperScissorsTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		7D29AD912C7DEF020097881E /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				7D29AD9C2C7DEF020097881E /* PaperScissorsUITestsLaunchTests.swift in Sources */,
-				7D29AD9A2C7DEF020097881E /* PaperScissorsUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		7D29AD8D2C7DEF010097881E /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 7D29AD792C7DEF000097881E /* PaperScissors */;
-			targetProxy = 7D29AD8C2C7DEF010097881E /* PBXContainerItemProxy */;
-		};
-		7D29AD972C7DEF020097881E /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 7D29AD792C7DEF000097881E /* PaperScissors */;
-			targetProxy = 7D29AD962C7DEF020097881E /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		7D29AD9D2C7DEF020097881E /* Debug */ = {
@@ -480,11 +346,13 @@
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
+				INFOPLIST_KEY_UIStatusBarHidden = YES;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 14.4;
@@ -518,11 +386,13 @@
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
+				INFOPLIST_KEY_UIStatusBarHidden = YES;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 14.4;
@@ -534,92 +404,6 @@
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
-		7D29ADA32C7DEF020097881E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
-				MACOSX_DEPLOYMENT_TARGET = 14.4;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.ozay.plusminus.PaperScissorsTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PaperScissors.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/PaperScissors";
-			};
-			name = Debug;
-		};
-		7D29ADA42C7DEF020097881E /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
-				MACOSX_DEPLOYMENT_TARGET = 14.4;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.ozay.plusminus.PaperScissorsTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PaperScissors.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/PaperScissors";
-			};
-			name = Release;
-		};
-		7D29ADA62C7DEF020097881E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
-				MACOSX_DEPLOYMENT_TARGET = 14.4;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.ozay.plusminus.PaperScissorsUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = PaperScissors;
-			};
-			name = Debug;
-		};
-		7D29ADA72C7DEF020097881E /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
-				MACOSX_DEPLOYMENT_TARGET = 14.4;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.ozay.plusminus.PaperScissorsUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = PaperScissors;
 			};
 			name = Release;
 		};
@@ -640,24 +424,6 @@
 			buildConfigurations = (
 				7D29ADA02C7DEF020097881E /* Debug */,
 				7D29ADA12C7DEF020097881E /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		7D29ADA22C7DEF020097881E /* Build configuration list for PBXNativeTarget "PaperScissorsTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				7D29ADA32C7DEF020097881E /* Debug */,
-				7D29ADA42C7DEF020097881E /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		7D29ADA52C7DEF020097881E /* Build configuration list for PBXNativeTarget "PaperScissorsUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				7D29ADA62C7DEF020097881E /* Debug */,
-				7D29ADA72C7DEF020097881E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
